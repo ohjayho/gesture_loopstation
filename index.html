@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="style.css"></link>
     <meta charset="utf-8" />
     <script
       src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"
@@ -21,9 +22,17 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="video_container">
       <video class="input_video"></video>
-      <canvas class="output_canvas" width="320px" height="240px"></canvas>
+      <canvas class="output_canvas" width="1280px" height="720px"></canvas>
+      <div class="btn_container upper_btn">
+        <button class="btn" id="left_top">helo</button>
+        <button class="btn" id="right_top">helo</button>
+      </div>
+      <div class="btn_container lower_btn">
+        <button class="btn" id="left_bottom">helo</button>
+        <button class="btn" id="right_bottom">helo</button>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
