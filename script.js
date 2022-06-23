@@ -3,10 +3,15 @@ const canvasElement = document.getElementsByClassName("output_canvas")[0];
 const canvasCtx = canvasElement.getContext("2d");
 const btns = document.getElementsByClassName("btn");
 const left_top = document.getElementById("left_top");
+const video_container = document.getElementsByClassName("video_container");
 
 for (i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
     console.log("helo");
+  });
+  btns[i].addEventListener("mouseup", function () {
+    console.log("mouseup");
+    console.log(btns[i]);
   });
 }
 
@@ -92,8 +97,19 @@ function clickBtn(coords) {
       y <= value.y + BTN_HEIGHT &&
       z < Z_PRESS
     ) {
-      btns[key].click();
+      //btns[key].click();
+      //btns[key].focus();
+      btns[key].classList.add("clicked");
       //console.log("val", value.x, value.y);
+    } else {
+      if (btns[key].classList.contains("clicked")) {
+        btns[key].classList.remove("clicked");
+        if (!audio.paused) {
+          audio.pause();
+        } else {
+          audio.play();
+        }
+      }
     }
   }
   //console.log("xy", x, y, z);
