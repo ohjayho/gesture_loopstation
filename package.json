@@ -1,0 +1,25 @@
+{
+  "name": "gesture_loopstation",
+  "version": "1.0.0",
+  "description": "knou_project",
+  "main": "mediapipe.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohjayho/gesture_loopstation.git"
+  },
+  "author": "ohjayho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohjayho/gesture_loopstation/issues"
+  },
+  "homepage": "https://github.com/ohjayho/gesture_loopstation#readme",
+  "dependencies": {
+    "howler": "^2.2.3"
+  }
+}
