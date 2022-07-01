@@ -1,0 +1,9 @@
+1.
+it was difficult to create direct connection between mediapipe and buttons,
+made indirect connection through coordinates.
+
+2.
+when using Howl's 'on' method,
+do not make function at parameter.
+it slows down the program.
+make a function independently.
