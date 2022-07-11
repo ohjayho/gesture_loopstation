@@ -19,6 +19,8 @@
       src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
+    
   </head>
   <body>
     <div class="video_container">
@@ -31,15 +33,19 @@
       <div class="btn_container lower_btn">
         <button class="btn" id="left_bottom">helo</button>
         <button class="btn" id="right_bottom">helo</button>
-        <button class="record">asda</button>
+        <audio id="audio" controls></audio>
+        <button class="record">recr</button>
+        <button class="stop">sti</button>
       </div>
     </div>
+    <script src="recorder.js" type="module"></script>
     <script src="lib/howler.js"></script>
     <script src="lib/fingerpose.js"></script>
     <script src="gesture/fist.js"></script>
     <script src="gesture/thumbsup.js"></script>
     <script src="gesture/victory.js"></script>
     <script src="gesture/rocknroll.js"></script>
+    <script src="facefilter.js"></script>
     <script src="lib/mediapipe.js"></script>
   </body>
 </html>
