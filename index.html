@@ -20,7 +20,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
-    
   </head>
   <body>
     <div class="video_container">
@@ -38,8 +37,19 @@
         <button class="stop">sti</button>
       </div>
     </div>
-    <script src="recorder.js" type="module"></script>
+    <script>
+      // default path is on the same directory as this HTML
+      Mp3LameEncoderConfig = {
+        memoryInitializerPrefixURL: "lib/W3/"   // must end with slash
+        // => changed to javascripts/Mp3LameEncoder.min.js.mem
+      };
+      </script>
+    <script src="lib/W3/MP3LameEncoder.min.js" type="module"></script>
+    <script src="lib/W3/schema-ebml.js"></script>
+    <script src="lib/W3/lib-ebml.js"></script>
+    <script src="lib/W3/W3Module.js"></script>
     <script src="lib/howler.js"></script>
+    <script src="lib/recorder.js" type="module"></script>
     <script src="lib/fingerpose.js"></script>
     <script src="gesture/fist.js"></script>
     <script src="gesture/thumbsup.js"></script>
