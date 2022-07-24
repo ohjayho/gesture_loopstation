@@ -20,11 +20,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
     <div class="video_container">
       <video class="input_video"></video>
-      <canvas class="output_canvas" width="1280px" height="720px"></canvas>
+      <canvas class="output_canvas" width="1065px" height="400px"></canvas>
       <div class="btn_container upper_btn">
         <button class="btn" id="left_top">helo</button>
         <button class="btn" id="right_top">helo</button>
@@ -32,12 +33,15 @@
       <div class="btn_container lower_btn">
         <button class="btn" id="left_bottom">helo</button>
         <button class="btn" id="right_bottom">helo</button>
-        <video id="audio" controls></video>
+        <!--<video id="audio" controls></video> debugging -->
         <button class="record">recr</button>
         <button class="stop">sti</button>
+        <canvas class='canvases' id="canvas1"></canvas>
+        <canvas class='cnavases' id="canvas2"></canvas>
       </div>
     </div>
-    <script>
+    <img src="img/dog/7.png" alt="" id="dog">
+<!--    <script>
       // default path is on the same directory as this HTML
       Mp3LameEncoderConfig = {
         memoryInitializerPrefixURL: "lib/W3/"   // must end with slash
@@ -47,8 +51,10 @@
     <script src="lib/W3/MP3LameEncoder.min.js" type="module"></script>
     <script src="lib/W3/schema-ebml.js"></script>
     <script src="lib/W3/lib-ebml.js"></script>
-    <script src="lib/W3/W3Module.js"></script>
+    <script src="lib/W3/W3Module.js"></script> -->
+    <script src="lib/POV.js"></script>
     <script src="lib/howler.js"></script>
+    <script src="lib/visualizer.js"></script>
     <!--<script src="lib/recorder.js" type="module"></script>-->
     <script src="lib/recordAudioVideo.js" type="module"></script>
     <script src="lib/fingerpose.js"></script>
@@ -56,7 +62,7 @@
     <script src="gesture/thumbsup.js"></script>
     <script src="gesture/victory.js"></script>
     <script src="gesture/rocknroll.js"></script>
-    <script src="facefilter.js"></script>
+    <script src="lib/facefilter.js"></script>
     <script src="lib/mediapipe.js"></script>
   </body>
 </html>
