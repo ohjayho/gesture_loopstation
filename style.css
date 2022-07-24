@@ -1,15 +1,20 @@
 html {
   height: 100%;
+  background-color: #1f1f1f;
 }
 body {
   display: flex;
   height: 100%;
   justify-content: center;
   align-items: center;
+  background-image: url("img/bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  margin: 0px;
 }
 
 .output_canvas {
-  border-radius: 10%;
 }
 
 .video_container .input_video {
@@ -18,13 +23,15 @@ body {
 
 .video_container {
   position: relative;
+  top: -175px;
+  left: -10px;
 }
 
 .btn_container {
   display: flex;
   position: absolute;
   justify-content: space-between;
-  width: 1280px;
+  width: 1050px;
 }
 
 .upper_btn {
@@ -45,4 +52,32 @@ body {
 /*클릭시 classList로 추가되는 클래스 이름*/
 .clicked {
   background-color: antiquewhite;
+}
+
+.canvases {
+}
+
+#canvas1 {
+  position: fixed;
+  left: 0;
+  top: 250px;
+  width: 180px;
+  height: 300px;
+  background-color: rgb(209, 209, 209);
+}
+
+#canvas2 {
+  position: fixed;
+  right: 0;
+  top: 250px;
+  width: 180px;
+  height: 300px;
+  background-color: rgb(209, 209, 209);
+}
+
+#dog {
+  position: fixed;
+  width: 450px;
+  size: 10px;
+  bottom: 220px;
 }
