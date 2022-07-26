@@ -1,16 +1,26 @@
 html {
   height: 100%;
+  margin: 0;
   background-color: #1f1f1f;
 }
 body {
   display: flex;
-  height: 100%;
+  margin: 0;
   justify-content: center;
   align-items: center;
   background-image: url("img/bg.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 50%;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
   margin: 0px;
 }
 
@@ -23,15 +33,14 @@ body {
 
 .video_container {
   position: relative;
-  top: -175px;
-  left: -10px;
+  top: 5%;
 }
 
 .btn_container {
   display: flex;
   position: absolute;
   justify-content: space-between;
-  width: 1050px;
+  width: 100%;
 }
 
 .upper_btn {
@@ -43,10 +52,39 @@ body {
 }
 
 .btn {
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
   /*폰트에 영향없이 투명 배경 만드는법*/
   background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+#left_top {
+  background-image: url(img/bass.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#right_top {
+  background-image: url(img/drum.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#left_bottom {
+  background-image: url(img/synthesizer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#right_bottom {
+  background-image: url(img/microphone.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /*클릭시 classList로 추가되는 클래스 이름*/
@@ -54,30 +92,24 @@ body {
   background-color: antiquewhite;
 }
 
-.canvases {
-}
-
 #canvas1 {
-  position: fixed;
+  position: absolute;
   left: 0;
-  top: 250px;
-  width: 180px;
-  height: 300px;
-  background-color: rgb(209, 209, 209);
+  top: 0;
+  width: 9%;
+  height: 53%;
 }
 
 #canvas2 {
-  position: fixed;
+  position: absolute;
   right: 0;
-  top: 250px;
-  width: 180px;
-  height: 300px;
-  background-color: rgb(209, 209, 209);
+  top: 0;
+  width: 9%;
+  height: 53%;
 }
 
 #dog {
-  position: fixed;
-  width: 450px;
-  size: 10px;
-  bottom: 220px;
+  position: absolute;
+  width: 23%;
+  bottom: 11%;
 }
