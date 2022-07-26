@@ -52,36 +52,36 @@ body {
 }
 
 .btn {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
   /*폰트에 영향없이 투명 배경 만드는법*/
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
 }
 
 #left_top {
-  background-image: url(img/bass.png);
+  background-image: url(img/records/record_BASS.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 #right_top {
-  background-image: url(img/drum.png);
+  background-image: url(img/records/record_DRUM.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 #left_bottom {
-  background-image: url(img/synthesizer.png);
+  background-image: url(img/records/record_PIANO.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 #right_bottom {
-  background-image: url(img/microphone.png);
+  background-image: url(img/records/record_VOCAL.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
