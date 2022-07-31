@@ -7,3 +7,6 @@ when using Howl's 'on' method,
 do not make function at parameter.
 it slows down the program.
 make a function independently.
+
+3.
+'Mp3' format is not good for a loop.

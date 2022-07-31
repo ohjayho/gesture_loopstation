@@ -11,16 +11,6 @@ thumbsUpDescription.addDirection(
   fp.FingerDirection.VerticalUp,
   1.0
 );
-thumbsUpDescription.addDirection(
-  fp.Finger.Thumb,
-  fp.FingerDirection.DiagonalUpLeft,
-  0.9
-);
-thumbsUpDescription.addDirection(
-  fp.Finger.Thumb,
-  fp.FingerDirection.DiagonalUpRight,
-  0.9
-);
 
 // all other fingers:
 // - curled (best)

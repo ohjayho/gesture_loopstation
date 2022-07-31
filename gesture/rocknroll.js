@@ -1,6 +1,6 @@
 const rockNRollDescription = new fp.GestureDescription("rock_n_roll");
 
-rockNRollDescription.addCurl(fp.Finger.index, fp.FingerCurl.NoCurl, 1.0);
+rockNRollDescription.addCurl(fp.Finger.Index, fp.FingerCurl.NoCurl, 1.0);
 rockNRollDescription.addCurl(fp.Finger.Pinky, fp.FingerCurl.NoCurl, 1.0);
 rockNRollDescription.addCurl(fp.Finger.Thumb, fp.FingerCurl.NoCurl, 1.0);
 rockNRollDescription.addDirection(
